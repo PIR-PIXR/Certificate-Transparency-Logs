@@ -19,9 +19,11 @@ This library quickly and reliably downloads entries from [Certificate Transparen
 
 #### Usage
 
-In its most basic form, you call `scrape-ct-log` with the base URL of the CT log you wish to scrape, and it'll output all the (pre-)certificates to stdout in JSON, with some leading metadata.
+Usage: scrape-ct-log [OPTIONS] <Log_URL>
 
-Example:
+**Log_URL** can be used in the table at the end.
+
+Example: Log_URL = https://ct.googleapis.com/logs/eu1/xenon2024/
 
 ```sh
 # Prepare for a *massive* pile of JSON
