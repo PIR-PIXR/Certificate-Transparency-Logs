@@ -17,9 +17,7 @@ This library quickly and reliably downloads entries from [Certificate Transparen
 #### Help menu
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -h
 
-#### Usage
-
-Usage: scrape-ct-log [OPTIONS] <Log_URL>
+#### Usage: *scrape-ct-log [OPTIONS] <Log_URL>*
 
 **Log_URL** can be used in the table at the end.
 
