@@ -17,6 +17,17 @@ This library quickly and reliably downloads entries from [Certificate Transparen
 #### Help menu
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -h
 
+#### Usage
+
+In its most basic form, you call `scrape-ct-log` with the base URL of the CT log you wish to scrape, and it'll output all the (pre-)certificates to stdout [in JSON, with some leading metadata](#structure-of-the-output).
+
+Example:
+
+```sh
+# Prepare for a *massive* pile of JSON
+/PATH/TO/scrape-ct-log/target/release/scrape-ct-log [https://ct.googleapis.com/logs/crucible/](https://ct.googleapis.com/logs/eu1/xenon2024/)
+```
+
 #### Download 2^20 entries from Google's xenon2024
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -n 1048576 -o /PATH/TO/scrape-ct-log/xenon2024_log_entries https://ct.googleapis.com/logs/eu1/xenon2024/
 
