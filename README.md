@@ -22,23 +22,34 @@ It will show:
 Usage: scrape-ct-log [OPTIONS] <log_url>
 
 Arguments:
+
   <log_url>  The base URL of the Certificate Transparency log to scrape
 
 Options:
+
   -f, --format <FORMAT>            The format of the output produced from the scrape [default: json]
+  
   -o, --output <OUTPUT>            Write the scraped data to the specified file
-      --include-chains             Include the submitted chain in the output
-      --include-precert-data       Include the raw precert data
+  
+  --include-chains                 Include the submitted chain in the output
+      
+  --include-precert-data           Include the raw precert data
+      
   -n, --number-of-entries <COUNT>  The maximum number of entries to fetch from the log [default: 18446744073709551615]
+  
   -s, --start <START>              The first entry number to fetch from the log [default: 0]
+  
   -v, --verbose...                 Increase the amount of informative and debugging output
+  
   -h, --help                       Print help
+  
   -V, --version                    Print version
 
 #### Download 2**20 entries from Google's xenon2024
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -n 1048576 -o /PATH/TO/scrape-ct-log/xenon2024_log_entries https://ct.googleapis.com/logs/eu1/xenon2024/
 
 #### Control the output format
+
 By default, the output is in JSON format, which is generally understandable and somewhat human-friendly. However, JSON parsing can be CPU-intensive and verbose, especially for representing binary data such as X.509 certificates. To address this, we offer support for outputting the same information in [CBOR](https://cbor.io/), a binary-based format that can be processed more efficiently for our purposes. 
 
 You can utilize the -f or --format option to specify the output format.
