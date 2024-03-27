@@ -17,7 +17,7 @@ This library quickly and reliably downloads entries from [Certificate Transparen
 #### Help menu
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -h
 
-#### Download $$2^20$$ entries from Google's xenon2024
+#### Download 2^20 entries from Google's xenon2024
     /PATH/TO/scrape-ct-log/target/release/scrape-ct-log -n 1048576 -o /PATH/TO/scrape-ct-log/xenon2024_log_entries https://ct.googleapis.com/logs/eu1/xenon2024/
 
 #### Control the output format
