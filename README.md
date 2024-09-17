@@ -121,5 +121,6 @@ The former is included in the main `<entry>` structure, while this structure hol
 | Trust Asia Log2024-2 | https://ct2024.trustasia.com/log2024/ | Usable    | 86400 | 2024-01-01T00:00:00Z   | 2025-01-01T00:00:00Z  | TrustAsia | trustasia-ct-logs@trustasia.com       |
 
 ## Contributors
- - [Matt Palmer](https://github.com/mpalmer)
  - [Quang Cao](https://github.com/cnquang)
+ - [Matt Palmer](https://github.com/mpalmer)
+
